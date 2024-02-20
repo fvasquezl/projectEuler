@@ -6,13 +6,15 @@ import math
 
 l1=[2,3]
 n=3
-while len(l1)<100:
+while len(l1)<10:
     n+=2
+    x=True
     for i in range(2, int(math.sqrt(n)) + 1):
         if n % i == 0:
+           x=False
            break
-        else:
-            l1.append(n)
+    if x:   
+        l1.append(n)
 
 
 
@@ -23,12 +25,8 @@ for a0 in range(t):
 
     tiempo_inicio = time.time()
     print(l1)
-    # i=2
-    # p=1
-    # while p< n:
-    #     i+=1
-    #     if is_prime(i):
-    #         p+=1
+    print(l1[n-1])
+    
         
            
 
